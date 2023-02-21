@@ -4,7 +4,7 @@
     "analytics": "ba88f924-c3c9-408b-913e-e83951c3bd58"
   },
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "projects", 
   "projects": {
     "corax": {
       "projectType": "application",
