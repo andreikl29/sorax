@@ -1,0 +1,87 @@
+@use '@angular/material' as mat;
+
+//@include mat.core()
+
+app-tasks-window {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.main-window-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.task-window-wrapper {
+  //position: fixed;
+  //left: 0%;
+  //top: 0%;
+  //width: 100vw;
+  //height: 100vh;
+  //overflow-y: scroll;
+  //
+  //.task-window-inner {
+  //  position: absolute;
+  //  left: 0%;
+  //  width: 45vw;
+  //
+  //}
+  flex-grow: 1;
+  width: auto;
+  overflow-y: scroll;
+}
+
+.emails-window-wrapper {
+  //position: fixed;
+  //left: 0%;
+  //top: 0%;
+  //width: 100vw;
+  //height: 100vh;
+  //overflow-y: scroll;
+  //
+  //.emails-window-inner {
+  //  position: absolute;
+  //  left: 50%;
+  //  width: 45vw;
+  //}
+
+  width: 45vw;
+  max-width: 450px;
+}
+
+$corax-palette: (
+  50: #e8eaf6,
+  100: #c5cae9,
+  200: #9fa8da,
+  300: #7986cb,
+  // ... continues to 900
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: white,
+    // ... continues to 900
+  )
+);
+
+$corax-theme: mat.define-light-theme((
+  color: (
+    primary: red,
+    accent: blue,
+    warn: yellow,
+  )
+));
+
+
+$corax-primary-color: #6a1b9a;
+$corax-primary-secondary: #ffeb3b;
+$corax-secondary-color: #00c4ff;
+$corax-assignee-color: #ff6b10;
+$corax-tree-color: #F9C74F;
+$corax-tree-symbol-size: 18px;
+
+$corax-delete-button-color: #F94144;
+$corax-done-button-color: #43AA8B;
+
